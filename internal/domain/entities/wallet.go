@@ -12,7 +12,7 @@ type Wallet struct {
 	UpdatedAt time.Time `json:"updated_at"`
 }
 
-func CanWithdraw(amount float64) bool {
+func (w Wallet) CanWithdraw(amount float64) bool {
 	return false
 }
 
